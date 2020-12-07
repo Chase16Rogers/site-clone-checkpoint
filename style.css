@@ -1,3 +1,19 @@
+:root {
+  --white: rgb(245, 255, 253);
+  --success: #4D7043;
+
+}
+
+.bg-success {
+  background-color: var(--success) !important;
+}
+.bg-light {
+  background-color: var(--white) !important;
+}
+.bg-white {
+  background-color: var(--white) !important;
+}
+
 .input-h{
   height: 8em;
 }
@@ -5,6 +21,14 @@
 .bg-image {
   background-image: url(mountain.jpg);
   background-size: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+.bg-image {
+  background-image: url(mountain.jpg);
+  background-size: 280%;
+  background-position: center;
+}
 }
 
 .img-height {
@@ -24,16 +48,24 @@
   margin: 0 auto;
 }
 
+.text-shadow {
+  text-shadow: 0 0 2px black;
+}
+
 .mt-custom {
-  margin-top: 5em;
+  margin-top: 3em;
 } 
 
 .b-m {
   margin: 0 15;
 }
 
+.m-cus1 {
+  margin: 1px;
+}
+
 .min-hit {
-  height: 275px;
+  height: 230px;
   width: 275px;
 }
 
@@ -41,3 +73,73 @@
   height: 300px;
   width: 300px;
 }
+
+.custom-font {
+  font-family: 'Architects Daughter', cursive;
+}
+
+
+@media (min-width: 768px) {
+.card-spill {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(35%);
+}
+}
+
+@media only screen and (max-width: 768px) {
+  .hidden-mobile {
+    display: none;
+  }
+}
+
+.h-c {
+  height: 1em;
+}
+
+.animate:hover {
+  font-size: xx-large;
+  transition: font-size .3s;
+}
+
+.stars {
+  height: 2em;
+  width: 2em;
+  background-color: #343a40;
+  color: #f8f9fa;
+  border-radius: 50%;
+  font-size: 2em;
+}
+
+.stars-a {
+  font-size: 1em;
+  animation-name: stars-anim;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+.stars-a1 {
+  font-size: 1em;
+  animation-name: stars-anim1;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+.stars-a2 {
+  font-size: 1em;
+  animation-name: stars-anim2;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes stars-anim {
+  0% {font-size: 1em;}
+  25% {font-size: 1.9em}
+}
+
+@keyframes stars-anim1 {
+  25% {font-size: 1em;}
+  50% {font-size: 1.9em}
+}
+@keyframes stars-anim2 {
+  50% {font-size: 1em;}
+  75% {font-size: 1.9em}
+} 

@@ -5,10 +5,10 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
   <body class="bg-dark">
@@ -16,10 +16,10 @@
 
 <header class="container nav-sticky"> 
 
-  <div class="row bg-success ">
-  <div class="col-12">
-    <nav class="navbar navbar-light bg-success">
-      <a class="navbar-brand" href="#"><h1><i class="fa fa-cloud" aria-hidden="true"></i>lorem2</h1></a>
+  <div class="row bg-success text-light">
+  <div class="col">
+    <nav class="navbar navbar-light bg-success justify-content-start align-items-center">
+      <a class="navbar-brand custom-font" href="#"><h1 class="mb-0 text-light"><i class="fa fa-home" aria-hidden="true"></i> Lorem, ipsum.</h1></a>
     </nav>
     
   </div>
@@ -30,93 +30,107 @@
 
 <main class="container bg-dark mt-custom">
 
-
+  <!-- Input card & background image -->
   <div class="row bg-image">
     <div class="col-md-4 m-5">
-      <h5>Lorem, ipsum.</h5>
-    <div class=" card-body bg-white shadow-sm ">
-      <div class="col-12"><h5>Lorem, ipsum dolor.</h5></div>
+      <h5 class="text-muted text-shadow">Submit a question</h5>
+    <div class=" card-body bg-white shadow-lg ">
+      <div class="col-12"><h5>Contact Information</h5></div>
   <div class="container-fluid">
       <div class="row d-flex">
-        <div class="pb-3 col-12"><input class="w-100" type="text" placeholder="Text here"></div>
-        <div class="pb-3 col-12"><input class="w-100" type="text" placeholder="Text here"></div>
-        <div class="pb-3 col-7 pr-1"><input class="w-100" type="text" placeholder="Text here"></div>
-        <div class="pb-3 col-5 pl-0"><input class="w-100" type="text" placeholder="Text here"></div>
-        <div class="pb-3 col-12 flex-wrap"><input class="w-100 input-h" type="text" placeholder="Text here"></div>
-        <div class="col-1"><input type="checkbox"></div>
-        <div class="col-11"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus nihil illum ad vero unde quod?</p></div>
-        <div class="col-12"><button class="btn btn-success"></button></div>
+        <div class="pb-3 col-12"><input class="w-100 bg-white" type="text" placeholder="Name"></div>
+        <div class="pb-3 col-12"><input class="w-100 m-cus1 bg-white" type="text" placeholder="Email"></div>
+        <div class="pb-3 col-7 pr-1"><input class="w-100 bg-white" type="text" placeholder="Phone Number"></div>
+        <div class="pb-3 col-5 pl-0"><input class="w-100 bg-white" type="text" placeholder="Zipcode"></div>
+        <div class="pb-3 col-12"><input class="w-100 input-h d-flex align-items-start word-wrap bg-white" type="text" placeholder="Text here"></div>
+        <div class="col-1 flex-nowrap"><input type="checkbox"></div>
+        <div class="col-10"><p>By checking this box I agree to check this box.</p></div>
+        <div class="col-12"><button class="btn text-success">Submit</button></div>
         </div>
       </div>
       </div>
       </div>
-    <div class="col-md-5 d-sm-none d-md-block offset-md-1 p-4 m-5">
-      <div class="pl-4 border-left border-w border-success">
+    <div class="col-md-5 hidden-mobile offset-md-1 p-4 m-5">
+      <div class="pl-4 border-left border-w border-success text-shadow text-light">
         <h2 class="">Lorem ipsum dolor sit.</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat inventore, facere repudiandae natus tenetur dicta.</p>
         </div>
     </div>
   </div>
 
-
-  <div class="row bg-success p-4">
-    <div class="col-md-4 order-md-1 order-sm-2 d-flex flex-column justify-content-center">
+  <!-- spilling card -->
+  <div class="row bg-success justify-content-around">
+    <div class="col-md-5 order-md-1 order-2 my-md-5 d-flex flex-column justify-content-center text-light">
       <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolorem illo ex voluptatum unde veniam exercitationem vero quia reiciendis eum non aliquam quaerat, numquam laborum? Eius enim quaerat fugit placeat.</p>
     </div>
-<div class="col-md-4 order-md-2 offset-md-1 d-flex justify-content-center">
-    <div class=" card-body shadow-sm bg-white">
-      <p><i class="fa fa-cloud" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
-      <p><i class="fa fa-cloud" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
-      <p><i class="fa fa-cloud" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
-      <p><i class="fa fa-cloud" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
-      <p><i class="fa fa-cloud" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+<div class="col-md-5 order-md-2 offset-md-2 m-md-0 my-4 d-flex justify-content-center position-relative">
+    <div class=" card-body shadow-lg bg-white card-spill">
+      <h5><i class="animate fa fa-bus" aria-hidden="true"></i> You can't take a bus to the mountain</h5>
+      <h5><i class="animate fa fa-motorcycle" aria-hidden="true"></i> You could take a dirt bike to the mountain</h5>
+      <h5><i class="animate fa fa-plane" aria-hidden="true"></i> A plane would just fly over the mountain</h5>
+      <h5><i class="animate fa fa-rocket" aria-hidden="true"></i> Rockets only go to space mountains</h5>
+      <h5><i class="animate fa fa-ambulance" aria-hidden="true"></i> An ambulance is the worst way off the mountain</h5>
     </div>
   </div>
 </div>
 
+<!-- image & text -->
   <div class="row pt-5 pb-4 bg-light">
-    <div class="col-md-6 d-flex justify-content-center">
-      <img src="waterfall.jpg" alt="Oppsie Daisy!" class="img-height">
+    <div class="col-md-5 d-flex justify-content-center ml-md-5">
+      <img src="waterfall.jpg" alt="Oppsie Daisy!" class="img-fluid shadow-sm animg">
     </div>
     <div class="col-md-6 pt-3 d-flex align-items-center">
       <div class="container">
       <div class="row">
       <div class="col-12">
-            <h2><i class="fa fa-cloud" aria-hidden="true"></i> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur quidem quos accusamus officia id aut ratione atque beatae qui eveniet, aspernatur repellendus magni hic voluptatibus cupiditate, accusantium maxime omnis fugit.</p>
+            <h2><img src="https://www.flaticon.com/svg/static/icons/svg/2802/2802906.svg" class="h-c" alt=":)"> Do waterfalls truly exist in nature? The answer may shock you!</h2>
+            <p>We reached out to the geography instructor at a local highschool to get to the bottom of this burning question. He attempted to dodge the question by asking if we were serious, if this was really something we needed to ask, how did we make it through highschool and four years of college without knowing that waterfalls were a real thing . . .</p>
           </div>
           <div class="col-12 d-flex justify-content-end">
-            <button class="btn btn-primary"></button>
+            <button class="btn btn-success bg-success">More</button>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="row justify-content-around align-items-end bg-light pb-5">
-<div class="col-md-4">
-    <div class="card-body bg-white shadow-lg min-hit">
+  <!-- 3 cards -->
+  <div class="row justify-content-md-around align-items-md-center bg-light text-center pb-5">
+<div class="col-md-4 order-md-1 order-2 p-2">
+    <div class="card-body bg-white shadow-lg min-hit m-auto d-flex align-items-center ">
+      <div>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sit fuga voluptatibus!</p>
       <h5>Lorem ipsum dolor sit amet consectetur.</h5>
+      </div>
     </div>
 </div>
-<div class="col-md-4">
-    <div class="card-body shadow-lg bg-white min-cd">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae harum assumenda voluptatum id. Labore eius reprehenderit ut quis maiores quas laborum harum quasi animi quos deleniti quam, sit fuga voluptatibus!</p>
+<div class="col-md-4 order-md-1 order-1 p-2">
+    <div class="card-body bg-white shadow-lg min-cd m-auto d-flex align-items-center">
+      <div>
+        <div class="d-flex direction-row justify-content-around mb-2">
+        <div class="stars d-flex justify-content-center align-items-center"><i class="stars-a fa fa-star" aria-hidden="true"></i></div>
+        <div class="stars d-flex justify-content-center align-items-center"><i class="stars-a1 fa fa-star" aria-hidden="true"></i></div>
+        <div class="stars d-flex justify-content-center align-items-center"><i class="stars-a2 fa fa-star" aria-hidden="true"></i></div>
+        </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sit fuga voluptatibus!</p>
       <h5>Lorem ipsum dolor sit amet consectetur.</h5>
+      </div>
     </div>
 </div>
-<div class="col-md-4">
-    <div class="card-body shadow-lg bg-white min-hit">
-      <p>Lorem ipsum dolor sit amet consecte quos deleniti quam, sit fuga voluptatibus!</p>
+<div class="col-md-4 order-md-1 order-2 p-2">
+    <div class="card-body bg-white shadow-lg min-hit m-auto d-flex align-items-center ">
+      <div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sit fuga voluptatibus!</p>
       <h5>Lorem ipsum dolor sit amet consectetur.</h5>
+      </div>
     </div>
 </div>
+
   </div>
 
   <div class="row bg-success justify-content-center">
-    <div class="col-11 p-2">
+    <div class="col-11 p-2 text-light">
       <h2>Lorem, ipsum dolor.</h2>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad similique corporis neque, ex placeat ipsa?</p>
     </div>
@@ -125,11 +139,11 @@
 </main>
 
 
-<footer class="container p-0 b-m bg-light">
+<footer class="container b-m bg-light">
 
   <div class="row justify-content-center b-m">
     <div class="col-12 p-2 text-center">
-      <h5 class=" w-100">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis sed quae, dignissimos illo et officiis!</h5>
+      <h5 class=" w-100 custom-font font-weight-bold">Copied with <i class="fa fa-heart animate" aria-hidden="true"></i> by Chase Rogers.</h5>
     </div>
   </div>
 
